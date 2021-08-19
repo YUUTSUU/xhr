@@ -1,4 +1,28 @@
 window.addEventListener("DOMContentLoaded", () => {
+  // function createCards(response) {
+  //   response.forEach(item => {
+  //     let card = document.createElement("div"),
+  //         icon = null;
+
+  //     if (item.sex === "male") {
+  //       icon = "icons/mars.png";
+  //     } else {
+  //       icon = "icons/female.png";
+  //     }
+
+  //     card.classList.add("card");
+  //     card.innerHTML = `
+  //       <img src="${item.photo}" alt="photo">
+  //       <div class="name">${item.name} ${item.surname}</div>
+  //       <div class="sex">
+  //         <img src="${icon}" alt="male">
+  //       </div>
+  //       <div class="age">${item.age}</div>
+  //     `;
+  //     document.querySelector(".app").prepend(card);
+  //   });
+  // }
+
   const form = document.querySelector("form");
 
   //отправка данных
@@ -175,5 +199,6 @@ window.addEventListener("DOMContentLoaded", () => {
   //   return response;
   // }
 
+  // document.querySelector("button").addEventListener("click", request, {"once": true});
   form.addEventListener("submit", (event) => request(event), {"once": true});
 });
